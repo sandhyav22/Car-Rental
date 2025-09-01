@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout with Scrollable Cards</title>
+  <link rel="stylesheet" href="style.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+   
+    main {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <img src="image/carlogo.png" alt="flexicar" />
+      
+      </div>
+     
+
+
+ <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Cars</a>
+          <ul class="dropdown-menu">
+              <li class="pickup"><a href="pickup.html">Pickup Cars</a></li>
+              <li class="van"><a href="van.html">Van Cars</a></li>
+              <li class="saloon"><a href="saloon.html">Saloon Cars</a></li>
+              <li class="offroad"><a href="offroad.html">Off Road Cars</a></li>
+              <li class="sports"><a href="spots.html">Spots Cars</a></li>
+          </ul>
+        </li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-search"></i>
+    </div>
+
+<a href="cart.html" style="text-decoration: none; color: inherit;">
+  <div class="icon-btn cart-icon" title="Cart"> 
+    <i class="fas fa-shopping-cart"></i>
+  </div>
+</a>
+    </div>
+<div class="icon-btn">
+  <i class="fas fa-user login-icon" title="Login"></i>
+</div>
+</header>
+ <div class="breadcrumb">Cars &gt; Filter</div>
+
+<main>
+    <!-- Left Section -->
+    <div class="left-section">
+     <div class="Header-card">
+    <div class="header-top">
+      <span>Rental Date:</span>
+      <span>-</span>
+    </div>
+  </div>
+
+  <!-- Rental Type -->
+  <div class="Header-card1">
+    <div class="header-top">
+      <span>Rental Type:</span>
+      <span>+</span>
+    </div>
+
+    <div class="filter-box">
+      <label><input type="radio" name="rental" checked> Per hour</label>
+      <label><input type="radio" name="rental"> One Day</label>
+      <label><input type="radio" name="rental"> Monthly</label>
+    </div>
+  </div>
+
+  <div class="Header-card2">
+    <div class="header-top">
+      <span>Fuel Type:</span>
+      <span>+</span>
+    </div>
+
+   <div class="filter-box">
+      <label><input type="checkbox" checked> Petrol</label>
+      <label><input type="checkbox"> Diesel</label>
+      <label><input type="checkbox"> Electric</label>
+    </div>
+</div>
+ <div class="Header-card3">
+    <div class="header-top">
+      <span>Car Model & year:</span>
+      <span>+</span>
+    </div>
+
+    <div class="filter-box">
+      <label><input type="checkbox"> 2023</label>
+      <label><input type="checkbox" checked> 2024</label>
+      <label><input type="checkbox" checked> 2025</label>
+    </div>
+</div>
+ <div class="Header-card4">
+    <div class="header-top">
+      <span>Transmission:</span>
+      <span>+</span>
+    </div>
+
+    <div class="filter-box">
+      <label><input type="radio" name="gear"> Automatic</label>
+      <label><input type="radio" name="gear"> Manual</label>
+      <label><input type="radio" name="gear" checked> Any</label>
+    </div>
+</div>
+ <div class="Header-card5">
+    <div class="header-top">
+      <span>Body Style:</span>
+      <span>+</span>
+    </div>
+
+    <div class="Filter-box">
+       <label><input type="checkbox" checked> Seden</label>
+      <label><input type="checkbox"> Wagon</label>
+      <label><input type="checkbox" checked> Crossover</label>
+      
+      <label><input type="checkbox"> Couple</label>
+      <label><input type="checkbox" checked> Pickup</label>
+      <label><input type="checkbox"> Sport Coupe</label>
+    </div>
+    </div>
+
+    <a href="pricing.html" class="price-link">
+     <div class="Header-card6">
+    <div class="header-top">
+      <span>Price Range:</span>
+      <span>+</span>
+    </div>
+<br>
+<div class="filter-box">
+  <label class="range-label">              </label>
+  <div class="price-range">
+    <span>1k</span>
+    <div class="range-wrapper">
+      <input type="range" min="1000" max="10000" value="1000" id="minRange">
+      <input type="range" min="1000" max="10000" value="2000" id="maxRange">
+      <output id="rangeTooltip">1k–2k</output>
+    </div>
+    <span>10k</span>
+  </div>
+</div>
+
+</div>
+</a>
+
+ <div class="Header-card7">
+    <div class="header-top">
+      <span>Car Brand:</span>
+      <span>+</span>
+    </div>
+
+    <div class="Filter-box">
+     <label><input type="checkbox"> Mahindra</label>
+      <label><input type="checkbox"> Toyota</label>
+      <label><input type="checkbox" checked> Kia</label>
+      <label><input type="checkbox"> Hyundai</label>
+      <label><input type="checkbox"> Tata Motors</label>
+      <label><input type="checkbox"> Renault</label>
+           <label><input type="checkbox" checked> BMW</label>
+      <label><input type="checkbox"  checked> Audi</label>
+      <label><input type="checkbox"> MB</label>
+      <label><input type="checkbox" checked> Jeep</label>
+      <label><input type="checkbox" checked> Skoda</label>
+      <label><input type="checkbox" checked> MG</label>
+    </div>
+    </div>
+
+ <div class="Header-card8">
+ 
+<div class="button-container">
+  <button class="apply-btn">Apply</button>
+</div>
+    </div>
+  </div>
+
+
+
+    <!-- Right Section -->
+        <div class="header-card">
+        <span>Related Details:</span>
+        <span>View All</span>
+      </div>
+    <div class="right-section">
+   
+
+      <div class="card-container-box">
+          <div class="card">
+      <div class="card-image">
+        <img src="Image/Frame 427319109.png" alt="Audi Q3 Sportback 2025">
+      </div>
+      <div class="card-content">
+        <h3>Audi Q3 Sportback 2025</h3>
+        <p class="price">1,800<span>/day</span></p>
+        <div class="features">
+          <div><img src="https://img.icons8.com/ios/50/speedometer.png" alt="">4,000</div>
+          <div><img src="https://img.icons8.com/ios/50/automatic.png" alt="">Manual</div>
+          <div><img src="https://img.icons8.com/ios/50/user-group-man-man.png" alt="">7 Person</div>
+          <div><img src="https://img.icons8.com/ios/50/flash-on.png" alt="">Electric</div>
+        </div>
+        <div class="bottom">
+          <div class="rating">
+            <img src="https://img.icons8.com/emoji/48/star-emoji.png" alt="star">
+            <p><span>4.7</span></p>
+          </div>
+          <button class="btn">Rent Now</button>
+        </div>
+      </div>
+    </div>
+     <br><br>
+     <div class="card">
+        <div class="card-image">
+          <img src="Image/image 76.png" alt="Ferrari 296 GTB 2025">
+        </div>
+        <div class="card-content">
+          <h3>Ferrari 296 GTB 2025</h3>
+          <p class="price">1,800<span>/day</span></p>
+          <div class="features">
+            <div><img src="https://img.icons8.com/ios/50/speedometer.png" alt="">5,000</div>
+            <div><img src="https://img.icons8.com/ios/50/automatic.png" alt="">Auto</div>
+            <div><img src="https://img.icons8.com/ios/50/user-group-man-man.png" alt="">4 Person</div>
+            <div><img src="https://img.icons8.com/ios/50/flash-on.png" alt="">Electric</div>
+          </div>
+          <div class="bottom">
+            <div class="rating">
+              <img src="https://img.icons8.com/emoji/48/star-emoji.png" alt="star">
+              <p><span>5.0</span></p>
+            </div>
+            <button class="btn">Rent Now</button>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="card">
+        <div class="card-image">
+          <img src="Image/image 66.png" alt="Mercedes-Benz 2025">
+        </div>
+        <div class="card-content">
+          <h3>Mercedes-Benz 2025</h3>
+          <p class="price">1,800<span>/day</span></p>
+          <div class="features">
+            <div><img src="https://img.icons8.com/ios/50/speedometer.png" alt="">5,000</div>
+            <div><img src="https://img.icons8.com/ios/50/automatic.png" alt="">Auto</div>
+            <div><img src="https://img.icons8.com/ios/50/user-group-man-man.png" alt="">4 Person</div>
+            <div><img src="https://img.icons8.com/ios/50/flash-on.png" alt="">Electric</div>
+          </div>
+          <div class="bottom">
+            <div class="rating">
+              <img src="https://img.icons8.com/emoji/48/star-emoji.png" alt="star">
+              <p><span>5.0</span></p>
+            </div>
+            <button class="btn">Rent Now</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </main>
+<script>
+
+</script>
+ <footer>
+    <div class="footer-container">
+      
+      <!-- Know Section -->
+      <div class="footer-column">
+        <a href="about.html">
+        <h4>KNOW</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">About FlexiCar</a></li>
+          <li><a href="#">Bulk Order & Booking Events</a></li>
+        </ul>
+      </div>
+      </a>
+      <!-- Terms Section -->
+      <div class="footer-column">
+        <h4>TERMS & CONDITIONS</h4>
+        <ul>
+          <li><a href="#">FAQ’s</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Delivery & Return Policies</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="footer-column">
+        <a href="contact.html">
+        <h4>CONTACT US</h4>
+        <p>For Sale: FlexiCar@co.in</p>
+        <p>Call: +91 1234567890</p>
+        <p>For Complaints: 1800 2421 2421</p>
+        <p>Chat Time: Our Team is Available<br>Mon-Sat, 9.00AM - 8.00PM</p>
+        <p>For Complaints: Flexicc.com</p>
+      </div>
+      </a>
+      <!-- App Download Section -->
+      <div class="footer-column">
+        <h4>DOWNLOAD APP</h4>
+        <div class="app-buttons">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </div>
+      </div>
+
+      <!-- Social Section -->
+      <div class="footer-column">
+        <h4>FOLLOW US</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>>
+
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      Copyright © 2025 All Rights Reserved.
+    </div>
+  </footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
